@@ -36,7 +36,13 @@ const SidebarData = [
 
 const Sidebar = () => {
   return (
-    <Flex w="full" h="full" flexDir={'column'} borderRight={'1px solid #ccf'}>
+    <Flex
+      mt="1em"
+      w="full"
+      h="full"
+      flexDir={'column'}
+      borderRight={'1px solid #ccf'}
+    >
       {SidebarData.map((data, idx) => (
         <SideBarBox data={data} key={idx} />
       ))}
