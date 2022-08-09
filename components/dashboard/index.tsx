@@ -1,6 +1,7 @@
 import { Flex, Grid, GridItem } from '@chakra-ui/react';
 import FluidCMS from 'fluidcms-api';
 import { useEffect, useState } from 'react';
+import { Dashboard } from '../../types/dashboard';
 import Card from '../video-card/card';
 import DashboardNavbar from './navbar';
 const FluidAPI = FluidCMS('ISi8jIcTQhKa');

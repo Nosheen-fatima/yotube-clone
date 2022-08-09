@@ -1,4 +1,4 @@
-namespace Dashboard {
+export namespace Dashboard {
   export interface Fields {
     image: string;
     logo: string;

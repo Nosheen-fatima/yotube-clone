@@ -1,5 +1,6 @@
 import { Flex, Image, Text } from '@chakra-ui/react';
 import { HiOutlineDotsVertical } from 'react-icons/hi';
+import { Dashboard } from '../../types/dashboard';
 
 const Card = ({ video }: { video: Dashboard.RootObject }) => {
   return (
