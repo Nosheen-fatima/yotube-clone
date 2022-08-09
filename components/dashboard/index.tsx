@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import Card from '../video-card/card';
 import DashboardNavbar from './navbar';
 const FluidAPI = FluidCMS('ISi8jIcTQhKa');
-const Dashboard = () => {
+const DashboardComponent = () => {
   const [data, setData] = useState<Dashboard.RootObject[]>([]);
   async function getProducts() {
     const data = await FluidAPI.getAllRecords('video');
-    setData(data);
+    setData(data as unknown as Dashboard.RootObject[]);
   }
   useEffect(() => {
     (async () => {
@@ -29,4 +29,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default DashboardComponent;

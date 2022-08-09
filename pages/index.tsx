@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import Dashboard from '../components/dashboard';
+import DashboardComponent from '../components/dashboard';
 import Navbar from '../layout/navbar';
 import Sidebar from '../layout/sidebar';
 const Home: NextPage = () => {
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
           <Sidebar />
         </Flex>
         <Flex flex={'.91'}>
-          <Dashboard />
+          <DashboardComponent />
         </Flex>
       </Flex>
     </Flex>
